@@ -392,6 +392,7 @@ export class App {
         loggingPlugin,
         ApolloServerPluginDrainHttpServer({ httpServer })
       ],
+      stopOnTerminationSignals: false,
       introspection: this.config.env !== 'production'
     })
 
